@@ -85,7 +85,7 @@ By now, you should have:
 - Cloned the Tic-Tac-Toe instructions repository to your local machine.
 - Navigated into the repository directory.
 
-> If you've cloned the repository to the wrong location or forgot to navigate into the cloned directory, don't worry! You can simply move the folder to your desired location using your file system, or delete it and clone again.
+> Note: If you've cloned the repository to the wrong location or forgot to navigate into the cloned directory, don't worry! You can simply move the folder to your desired location using your file system, or delete it and clone again.
 
 ## Sources
 
