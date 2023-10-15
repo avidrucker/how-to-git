@@ -54,9 +54,23 @@ By now, you should have:
 1. Verified the installation by checking the Git version.
 1. Configured Git with your personal details.
 
-## 3. How to Clone a Repo
+## 3. How to Fork a Repo
 
-With Git installed and configured, it's time to dive into our project. Instead of starting from scratch, we're going to use an existing set of Tic-Tac-Toe instructions. This will give you practical experience with one of the most common Git tasks: cloning a repository.
+With Git installed and configured, it's time to dive into our project. Instead of starting from scratch, we're going to use an existing set of Tic-Tac-Toe instructions. This will give you practical experience with a very common Git task: forking a repository.
+
+### What is Forking?
+Forking in Git means creating a remote copy of a pre-existing repository. This allows you to work on your own version of pre-existing code and files, make changes, and then sync those changes back to the original repository, if you so choose. This is particuarly useful for learning projects, and collaboration on larger projects.
+
+Before we start making changes, let's set up your own copy of the Tic-Tac-Toe instructions repository on GitHub.
+
+1. Open your web browser and go to GitHub.
+1. Log in to your GitHub account (or create one if you don't have it).
+1. Visit the Tic-Tac-Toe instructions repository. Replace yourusername with your actual GitHub username.
+1. Click the "Fork" button in the upper right corner of the repository page. This will create a copy of the repository under your GitHub account.
+
+Now, you have your own fork of the Tic-Tac-Toe instructions repository on GitHub.
+
+## 4. How to Clone a Repo
 
 ### What is Cloning?
 Cloning in Git means creating a local copy (i.e. download) of a remote repository on your machine. This allows you to work on projects, make changes, and then sync those changes back to the remote repository.
@@ -64,11 +78,12 @@ Cloning in Git means creating a local copy (i.e. download) of a remote repositor
 ### Cloning the Tic-Tac-Toe Instructions
 To get our basic version of the Tic-Tac-Toe instructions, follow these steps:
 
-1. Navigate to the directory where you'd like to store the project on your machine using your terminal window.
+1. In GitHub on the page for your forked repo, click on the green button that says "code", and then copy the address listed in the pop-up window, which should look like "`https://github.com/[YOUR GITHUB USERNAME HERE]/how-to-play-tictactoe.git`".
+1. On your computer, navigate to the directory where you'd like to store the project using your terminal window.
 1. Enter the following command:
 
 ```bash
-git clone https://github.com/avidrucker/how-to-play-tictactoe.git
+git clone [https://github.com/avidrucker/how-to-play-tictactoe.git](https://github.com/[YOUR GITHUB USERNAME HERE]/how-to-play-tictactoe.git)
 ```
 
 3. Once the cloning process completes (it may take a few seconds, depending on your Internet connection), you should see a new directory with the name of the repository. This directory contains all the files from the repository.
@@ -78,7 +93,7 @@ git clone https://github.com/avidrucker/how-to-play-tictactoe.git
 cd how-to-play-tictactoe/
 ```
 
-### Section 3 Checkpoint
+### Section 4 Checkpoint
 
 By now, you should have:
 
@@ -87,7 +102,7 @@ By now, you should have:
 
 > Note: If you've cloned the repository to the wrong location or forgot to navigate into the cloned directory, don't worry! You can simply move the folder to your desired location using your file system, or delete it and clone again.
 
-## 4. How to Stage Files and Commit File Changes
+## 5. How to Stage Files and Commit File Changes
 
 Now that we have our Tic-Tac-Toe instructions repository on our machine, it's time to start the transformation process. But before we start making changes, we need to understand the current state of our repository. Git provides us with powerful commands to inspect, track, and commit changes.
 
@@ -133,7 +148,7 @@ The `-m` "**flag**" lets you add a message to describe the changes you made. It'
 >
 > Message: The "message" is just a short note or comment that you write to explain what you did in your code. It helps you and others understand the purpose of your changes. For example, if you fixed a bug or added a new feature, you can use the `-m` flag to include a message like "Fixed a bug in login system" or "Added a new search feature."
 
-### Section 4 Checkpoint
+### Section 5 Checkpoint
 
 By now, you should have:
 
