@@ -11,8 +11,8 @@ In this tutorial we will cover the basics of Git by creating a "**repository**" 
 Git is what is called a "**version control system**". Version control systems allow multiple people to work on projects without stepping on each other's toes. Git tracks file changes, allows for "**branches**" (alternate universes or timelines) of development, and ensures data integrity (that the saved/tracked data is accurate, reliable, and consistent over time). For developers and collaborative individuals, Git is a valuable skill to learn.
 
 ### What You Need to Know First
-- Be familiar with using the terminal to enter commands such as "ls", "mkdir", and "touch"
-- Be able to navigate to different directories (folders) on your computer using the terminal and the "cd" command
+- Be familiar with using the terminal to enter commands such as `ls` (or `dir` for Windows), `mkdir`, and `touch` or `echo`
+- Be able to navigate to different directories (folders) on your computer using the terminal and the `cd` command
 
 ### What Will You Learn?
 By the end of this tutorial, you will:
@@ -44,7 +44,7 @@ git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
-Replace "Your Name" with your actual name and "youremail@example.com" with your email address.
+Replace "Your Name" with your actual name and `"youremail@example.com"` with your email address.
 
 ### Section 2 Checkpoint
 
