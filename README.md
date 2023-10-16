@@ -6,7 +6,7 @@
 - Prerequisites: Familiarity with basic terminal or command prompt commands.
 
 ## 2. Install and Setup Git
-- Install: Download Git here and follow the instructions.
+- Install: [Download Git here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions.
 - Setup: Tell Git who you are:
 ```bash
 git config --global user.name "Your Name"
@@ -14,7 +14,7 @@ git config --global user.email "youremail@example.com"
 ```
 
 ## 3. Get the Tic-Tac-Toe Instructions
-- Go to Tic-Tac-Toe instructions.
+- Go to [Tic-Tac-Toe instructions](https://github.com/avidrucker/how-to-play-tictactoe).
 - Click "Fork" to get your own copy on GitHub.
 
 ## 4. Download Your Copy
