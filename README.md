@@ -1,177 +1,48 @@
-# How To Git
+# Simple Git Tutorial: Tic-Tac-Toe Guide
 
-## 1. Introduction
+## 1. Setup and Introduction
+- Git is a tool to track changes in code. It's like a supercharged 'save' feature.
+- We'll make a nice-looking Tic-Tac-Toe guide using it.
+- Prerequisites: Familiarity with basic terminal or command prompt commands.
 
-In this tutorial we will cover the basics of Git by creating a "**repository**" (a collection of tracked files, "repo" for short) with instructions on how to play Tic-Tac-Toe (also called Noughts and Crosses). Don't worry if you don't know how to play the game, the rules will be provided for you. The focus here will be on working with repositories, editing files, and getting comfortable with the basics of Git. Specifically, we will take a basic set of instructions for Tic-Tac-Toe in plain text format, and transform it into a visually appealing guide using a simple formatting language called "Markdown".
-
-> Note: This document was written in Markdown 😃
-
-### What is Git?
-
-Git is what is called a "**version control system**". Version control systems allow multiple people to work on projects without stepping on each other's toes. Git tracks file changes, allows for "**branches**" (alternate universes or timelines) of development, and ensures data integrity (that the saved/tracked data is accurate, reliable, and consistent over time). For developers and collaborative individuals, Git is a valuable skill to learn.
-
-### What You Need to Know First
-- Be familiar with using the terminal to enter commands such as `ls` (or `dir` for Windows), `mkdir`, and `touch` or `echo`.
-- Be able to navigate to different directories (folders) on your computer using the terminal and the `cd` command.
-
-### What Will You Learn?
-By the end of this tutorial, you will:
-
-- Understand basic Git operations and when to use them.
-- Be familiar with the structure and syntax of Markdown.
-- Have hands-on experience with branching, committing changes, and working with "**remote**" (hosted not on your computer) repositories.
-- Know how to undo mistakes in Git, ensuring you can confidently experiment without fear of "breaking" anything.
-
-## 2. How to Install and Configure Git
-
-### How to Install Git
-
-Go [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions for your operating system
-
-#### You will know your install was a success if:
-
-Open a terminal window and run the command `git --version`. If you see something like "git version 2.25.1" then you have successfully installed Git.
-
-> Note: The version number of Git may be different if you are in the future, and that's OK.
-
-### How to Configure Git
-Once installed, it's essential to tell Git who you are. This information is used to track changes in the projects you work on.
-
-Open your terminal or command prompt and enter the following commands:
-
+## 2. Install and Setup Git
+- Install: Download Git here and follow the instructions.
+- Setup: Tell Git who you are:
 ```bash
 git config --global user.name "Your Name"
 git config --global user.email "youremail@example.com"
 ```
 
-Replace "Your Name" with your actual name and `"youremail@example.com"` with your email address.
+## 3. Get the Tic-Tac-Toe Instructions
+- Go to Tic-Tac-Toe instructions.
+- Click "Fork" to get your own copy on GitHub.
 
-### Section 2 Checkpoint
-
-By now, you should have:
-
-1. Installed Git on your machine.
-1. Verified the installation by checking the Git version.
-1. Configured Git with your personal details.
-
-## 3. How to Fork a Repo
-
-With Git installed and configured, it's time to dive into our project. Instead of starting from scratch, we're going to use an existing set of Tic-Tac-Toe instructions. This will give you practical experience with a very common Git task: forking a repository.
-
-### What is Forking?
-Forking in Git means creating a remote copy of a pre-existing repository. This allows you to work on your own version of the repo, make changes, and then sync those changes back to the original repo. This is particuarly useful for collaborating on larger projects (and learning projects too).
-
-Before we start making changes, let's set up your own copy of the Tic-Tac-Toe instructions repository on GitHub.
-
-1. Open your web browser and go to GitHub.
-1. Log in to your GitHub account (or create one if you don't have it).
-1. Visit the [Tic-Tac-Toe instructions repository](https://github.com/avidrucker/how-to-play-tictactoe)
-1. Click the "Fork" button in the upper right corner of the repository page. This will create a copy of the repository under your GitHub account.
-
-Now, you have your own fork of the Tic-Tac-Toe instructions repository on GitHub.
-
-## 4. How to Clone a Repo
-
-### What is Cloning?
-
-Cloning in Git means downloading the contents of a remote repository to your machine. This allows you to work on projects, make changes, and then sync those changes back to the remote repository.
-
-### Cloning the Tic-Tac-Toe Instructions
-To get our basic version of the Tic-Tac-Toe instructions, follow these steps:
-
-1. In GitHub on the page for your forked repo, click on the green button that says "code", and then copy the address listed in the pop-up window, which should look like "`https://github.com/[YOUR GITHUB USERNAME HERE]/how-to-play-tictactoe.git`".
-1. On your computer, navigate to the directory where you'd like to store the project using your terminal window.
-1. Enter the following command:
+## 4. Download Your Copy
+- On your GitHub fork, click "code" > copy the link.
+- On your computer:
 
 ```bash
-git clone https://github.com/[YOUR GITHUB USERNAME HERE]/how-to-play-tictactoe.git
-```
-
-4. Once the cloning process completes (it may take a few seconds, depending on your Internet connection), you should see a new directory with the name of the repository. This directory contains all the files from the repository.
-4. Navigate into the repository directory:
-
-```bash
+git clone YOUR_LINK_HERE
 cd how-to-play-tictactoe/
 ```
 
-### Section 4 Checkpoint
-
-By now, you should have:
-
-- Cloned the Tic-Tac-Toe instructions repository to your local machine.
-- Navigated into the repository directory.
-
-> Note: If you've cloned the repository to the wrong location or forgot to navigate into the cloned directory, don't worry! You can simply move the folder to your desired location using your file system, or delete it and clone again.
-
-## 5. How to Stage Files and Commit File Changes
-
-Now that we have our Tic-Tac-Toe instructions repository on our machine, it's time to start the transformation process. But before we start making changes, we need to understand the current state of our repository. Git provides us with powerful commands to inspect, track, and commit changes.
-
-### How to Inspect a Local Repo
-
-The first thing we want to do is check the status of our repository:
-
-```bash
-git status
-```
-
-This command will show you any changes made to the repository since the last commit. When you run it now, you'll probably see that everything is up to date and there's nothing to commit.
-
-### Create New File
-Let's start by creating a new Markdown file for our improved instructions:
-
-```bash
-touch tic-tac-toe.md
-```
-
-If you check the status again (git status), you'll see that Git has noticed the new file, but it's currently untracked.
-
-### Track Changes to New File
-
-To start tracking changes to our new file, we use:
-
+## 5. Make a Better Tic-Tac-Toe Guide
+- Make a new file: `touch tic-tac-toe.md`
+- Use any text editor to write a guide in this file.
+- Save your changes in Git:
 ```bash
 git add tic-tac-toe.md
+git commit -m "Created a new Tic-Tac-Toe guide."
 ```
 
-Now, if you check the status, you'll see the file is ready to be committed.
-
-### Commit Changes on New File
-
-After making some improvements to the tic-tac-toe.md file (using any text editor of your choice), you'll want to save these changes in Git. Since we just created the file, for now, let's just commit that change.
-
+## 6. Update Your GitHub Copy
+- To save your local changes online:
 ```bash
-git commit -m "add markdown version of Tic-Tac-Toe instructions"
+git push
 ```
 
-The `-m` "**flag**" lets you add a message to describe the changes you made. It's always a good practice to write a brief and descriptive message so you (or others) can understand the changes at a glance.
+## 7. Oops! Made a Mistake?
+- Git's got you covered. Use commands like `git log`, `git reset`, and others to backtrack.
 
-> `-m` flag: The `-m` is a specific instruction that you can give to Git when you're using a command like "commit." In this case, it's used with the commit command to add a message that describes what you did in your code changes. So, when you use -m followed by a message, Git knows to associate that message with the changes you're making.
->
-> Message: The "message" is just a short note or comment that you write to explain what you did in your code. It helps you and others understand the purpose of your changes. For example, if you fixed a bug or added a new feature, you can use the `-m` flag to include a message like "Fixed a bug in login system" or "Added a new search feature."
-
-### Section 5 Checkpoint
-
-By now, you should have:
-
-- Checked the status of your repository.
-- Created a new Markdown file.
-- Tracked and committed your changes to the repository.
-
-> Note: If you forget to add a file before committing or skip writing a commit message, Git will remind you. Always read the feedback Git provides in the terminal; it often contains helpful hints and commands.
-
-## 6: How to Push and Pull Changes
-
-Here we go into "saving" our local work to our remote repo on GitHub, as well as "loading" any updates or changes from the remote repo to our local repo.
-
-## 7. How to Undo Mistakes
-
-Everyone makes mistakes. Fortunately, Git allows you to find those mistakes and undo them.
-
-## 8. How to Ignore Things
-
-Git doesn't need to track and save everything. Sometimes, we want or need Git to ignore specific files or directories.
-
-## Sources
-
-1. What does Git stand for: [stackoverflow question and answer](https://stackoverflow.com/questions/43959748/what-is-the-abbreviation-of-git)
+## 8. Ignore Unnecessary Files
+- Some files (like temporary ones) don't need to be in Git. Use a .gitignore file to list them.
