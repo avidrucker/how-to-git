@@ -3,7 +3,7 @@
 ## 1. Introduction
 - Git is a version control system that helps you track changes in files.
 - In this tutorial, we'll create a simple README file using Git.
-- No prior Git experience required.
+- No prior Git experience required. However, you do need to know [the basics of using the terminal](https://github.com/avidrucker/how-to-command-line).
 
 ## 2. Install Git
 - Download and install Git from [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
