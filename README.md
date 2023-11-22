@@ -1,4 +1,4 @@
-# Simple Git Tutorial: Creating a README File
+# Intro Git How-To: Creating a README File
 
 ## 1. Introduction
 - Git is a version control system that helps you track changes in files.
