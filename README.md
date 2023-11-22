@@ -1,48 +1,64 @@
-# Simple Git Tutorial: Tic-Tac-Toe Guide
+# Simple Git Tutorial: Creating a README File
 
-## 1. Setup and Introduction
-- Git is a tool to track changes in code. It's like a supercharged 'save' feature.
-- We'll make a nice-looking Tic-Tac-Toe guide using it.
-- Prerequisites: Familiarity with basic terminal or command prompt commands.
+## 1. Introduction
+- Git is a version control system that helps you track changes in files.
+- In this tutorial, we'll create a simple README file using Git.
+- No prior Git experience required.
 
-## 2. Install and Setup Git
-- Install: [Download Git here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and follow the instructions.
-- Setup: Tell Git who you are:
-```bash
-git config --global user.name "Your Name"
-git config --global user.email "youremail@example.com"
-```
+## 2. Install Git
+- Download and install Git from [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- Open your terminal or command prompt.
+- Configure Git with your name and email:
+  ```bash
+  git config --global user.name "Your Name"
+  git config --global user.email "youremail@example.com"
+  ```
 
-## 3. Get the Tic-Tac-Toe Instructions
-- Go to [Tic-Tac-Toe instructions](https://github.com/avidrucker/how-to-play-tictactoe).
-- Click "Fork" to get your own copy on GitHub.
+## 3. Create a New Git Repository
+- Again in your terminal or command prompt, navigate to the folder where you want to create your project (make sure this folder is only for your project, and contains nothing else)
+- Initialize a new Git repository:
+  ```bash
+  git init
+  ```
 
-## 4. Download Your Copy
-- On your GitHub fork, click "code" > copy the link.
-- On your computer:
+## 4. Create Your README File
+- Create a new file named `README.md` in your project folder.
+- Edit `README.md` using a text editor and paste the following Markdown content:
+  ```
+  # Project Title
 
-```bash
-git clone YOUR_LINK_HERE
-cd how-to-play-tictactoe/
-```
+  A brief description of your project.
 
-## 5. Make a Better Tic-Tac-Toe Guide
-- Make a new file: `touch tic-tac-toe.md`
-- Use any text editor to write a guide in this file.
-- Save your changes in Git:
-```bash
-git add tic-tac-toe.md
-git commit -m "Created a new Tic-Tac-Toe guide."
-```
+  ## Image
+  ![Image Description](image_link_here)
 
-## 6. Update Your GitHub Copy
-- To save your local changes online:
-```bash
-git push
-```
+  ## Link
+  [Click here](your_link_here)
 
-## 7. Oops! Made a Mistake?
-- Git's got you covered. Use commands like `git log`, `git reset`, and others to backtrack.
+  ## List
+  - Item 1
+  - Item 2
+  - Item 3
 
-## 8. Ignore Unnecessary Files
-- Some files (like temporary ones) don't need to be in Git. Use a .gitignore file to list them.
+  ## Headings
+  ### Subheading 1
+  ### Subheading 2
+  ```
+
+## 5. Track Changes with Git
+- Check the status of your Git repository:
+  ```bash
+  git status
+  ```
+- Add your `README.md` to the staging area:
+  ```bash
+  git add README.md
+  ```
+- Commit your changes:
+  ```bash
+  git commit -m "Added README file"
+  ```
+
+## 6. Recap
+- You've learned how to initialize a Git repository, check the status, stage files, and commit changes.
+- These are the foundational commands of Git, essential for basic version control.
